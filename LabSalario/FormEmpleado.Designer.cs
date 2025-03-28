@@ -38,6 +38,7 @@
             this.btncerrar = new System.Windows.Forms.Button();
             this.btnguardar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnreporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtnoempleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -94,17 +95,17 @@
             // 
             // btningresarasistencia
             // 
-            this.btningresarasistencia.Location = new System.Drawing.Point(636, 43);
+            this.btningresarasistencia.Location = new System.Drawing.Point(594, 317);
             this.btningresarasistencia.Name = "btningresarasistencia";
             this.btningresarasistencia.Size = new System.Drawing.Size(148, 50);
             this.btningresarasistencia.TabIndex = 6;
-            this.btningresarasistencia.Text = "Ingresar Asistencia";
+            this.btningresarasistencia.Text = "Ir Asistencia";
             this.btningresarasistencia.UseVisualStyleBackColor = true;
             this.btningresarasistencia.Click += new System.EventHandler(this.btningresarasistencia_Click);
             // 
             // btncerrar
             // 
-            this.btncerrar.Location = new System.Drawing.Point(636, 401);
+            this.btncerrar.Location = new System.Drawing.Point(778, 317);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(148, 46);
             this.btncerrar.TabIndex = 7;
@@ -125,18 +126,29 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(418, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(350, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(337, 203);
+            this.dataGridView1.Size = new System.Drawing.Size(606, 203);
             this.dataGridView1.TabIndex = 9;
+            // 
+            // btnreporte
+            // 
+            this.btnreporte.Location = new System.Drawing.Point(388, 319);
+            this.btnreporte.Name = "btnreporte";
+            this.btnreporte.Size = new System.Drawing.Size(165, 46);
+            this.btnreporte.TabIndex = 10;
+            this.btnreporte.Text = "Ir Reporte";
+            this.btnreporte.UseVisualStyleBackColor = true;
+            this.btnreporte.Click += new System.EventHandler(this.btnreporte_Click);
             // 
             // FormEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 499);
+            this.ClientSize = new System.Drawing.Size(968, 499);
+            this.Controls.Add(this.btnreporte);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.btncerrar);
@@ -169,6 +181,7 @@
         private System.Windows.Forms.Button btncerrar;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnreporte;
     }
 }
 

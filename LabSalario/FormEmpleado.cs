@@ -27,7 +27,7 @@ namespace LabSalario
         private void btningresarasistencia_Click(object sender, EventArgs e)
         {
             Formulario_Asistencia formulario_Asistencia= new Formulario_Asistencia();
-            formulario_Asistencia.ShowDialog();
+            formulario_Asistencia.Show();
         }
 
         private void btncerrar_Click(object sender, EventArgs e)
@@ -50,6 +50,7 @@ namespace LabSalario
             EmpleadoArchivo empleadoArchivo = new EmpleadoArchivo();
             //6) Llamar el metodo grabar
             empleadoArchivo.Guardar("../../Empleados.json", empleados);
+            Mostrar();
         }
         private void Mostrar()
         {
@@ -62,6 +63,17 @@ namespace LabSalario
         private void FormEmpleado_Load(object sender, EventArgs e)
         {
             Mostrar();
+        }
+
+        private void btnreporte_Click(object sender, EventArgs e)
+        {
+            FormReporte formReporte = new FormReporte();    
+            formReporte.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
